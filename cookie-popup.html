@@ -4,34 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookie popup test</title>
-    <link rel="stylesheet" href="cookie-popup.css" />
-    <link href="css/cookie-popup.css" rel="stylesheet" />
-
-
-
-
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2QFM6MLJE"></script>
-          <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'G-D2QFM6MLJE')
-  
-    
+    <title>Cookies</title>
+    <link rel="stylesheet" href="css/cookie-popup.css" />
   </head>
-
-  
   <body>
-    <h1>Cookie popup test page</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-      dignissimos voluptatibus consequatur quam. Doloremque aliquid cumque
-      aliquam necessitatibus saepe ullam dolor reprehenderit labore dolorem,
-      modi excepturi hic cum fugiat accusamus?
-    </p>
+    <h1>Cookies</h1>
+    <p>This website uses cookies to improve user experience. By continuing to use this site, you consent to the use of cookies in accordance with our Cookie Policy.</p>
+    
+    <p>Cookies are small text files stored on your computer or mobile device when you visit a website. They are commonly used to make websites work more efficiently and to provide information to the website owners.</p>
+    
+    <p>We use cookies for a variety of purposes, including:</p>
+    <ul>
+    
+      <li>Understanding how you interact with our website</li>
+      
+      <li>Improving our website and services</li>
+      <li>Providing personalized content and advertising</li>
+      <li>Tracking website analytics using tools like Google Analytics</li>
+      
+    </ul>
+                                
+    <p>Managing Cookies</p>
+                                
+    <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+                                
+                                
+    <p>Changes to Our Cookie Policy</p>
+                                
+    <p>We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page. You are advised to review this Cookie Policy periodically for any changes.</p>
+                                
 
     <div id="cookie-popup">
       <p>
@@ -44,59 +45,6 @@
       </p>
     </div>
 
-    <script src="js/cookie-popup.js"></script>
-
-    // Description: This script is used to show a cookie popup on the website
-// Get the cookie popup element
-const cookiePopup = document.getElementById("cookie-popup");
-
-// Get the accept button
-const acceptCookies = document.getElementById("accept-cookies");
-
-// Function to set a cookie
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  const expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-// Function to check if the cookie has been set
-function checkCookie() {
-  const cookieAccepted = getCookie("cookieAccepted");
-  if (cookieAccepted === "") {
-    // Show the cookie popup
-    cookiePopup.style.display = "block";
-  }
-}
-
-// Function to get a cookie value
-function getCookie(cname) {
-  const name = cname + "=";
-  const decodedCookie = decodeURIComponent(document.cookie);
-  const ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-// Event listener for the accept button
-acceptCookies.addEventListener("click", function () {
-  // Set the cookie
-  setCookie("cookieAccepted", "true", 30);
-  // Hide the cookie popup
-  cookiePopup.style.display = "none";
-});
-
-// Call the checkCookie function
-checkCookie();
-    
+    <script src="js/scripts.js"></script>
   </body>
 </html>
