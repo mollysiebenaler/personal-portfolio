@@ -1,2 +1,15 @@
-# personal-portfolio
- Personal portfolio for BAIS:3300 Digital Product Management
+# Personal portfolio
+## Created for BAIS:3300 Digital Product Management
+![Bootstrap badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Azure badge](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+
+
+---
+
+## What did I learn?
+Creating this personal portfolio for BAIS:3300 allowed me to practice my CSS and HTML skills in an in-depth format. 
+
+---
+
+## Change log
+04/30: -- updated README.md
