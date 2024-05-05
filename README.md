@@ -11,5 +11,11 @@ Creating this personal portfolio for BAIS:3300 allowed me to practice my CSS and
 
 ---
 
+## How did I create?
+To create this website, I downloaded a free bootstrap temaplate.  I then filled in my personal information in the HTML code, validating along the way.  To publish the site under mollysiebenaler.me, I had to connect this repository to MIcrosoft Azure. 
+
+
+---
+
 ## Change log
 04/30: -- updated README.md
